@@ -2,12 +2,13 @@
 
 ## Project Overview
 
-This is a Go project based on the Beego framework, designed to interact with Alibaba Cloud Object Storage Service (OSS). The project provides an API interface that allows users to post, get and delete a json string stored in Alibaba Cloud OSS. Alibaba Cloud OSS stores the string as the file. 
+This is a Go project based on the Beego framework, designed to interact with Alibaba Cloud Object Storage Service (OSS). The project provides an API interface that allows users to post, get and delete a string stored in Alibaba Cloud OSS.
 
 ## Technology Stack
 
 - [Go](https://golang.org/) - Programming language
 - [Beego v2](https://github.com/beego/beego) - Web framework
+- [Bee](https://github.com/beego/bee) - Command-line tool for Beego
 - [Alibaba Cloud OSS SDK](https://github.com/aliyun/aliyun-oss-go-sdk) - Alibaba Cloud Object Storage Service SDK
 
 ## Installation and Usage
@@ -35,8 +36,7 @@ This is a Go project based on the Beego framework, designed to interact with Ali
 
 4. Build and run
    ```bash
-   go build
-   ./alibabaoss
+   bee run
    ```
 ## License
 
