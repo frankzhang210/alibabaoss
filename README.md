@@ -38,6 +38,24 @@ This is a Go project based on the Beego framework, designed to interact with Ali
    ```bash
    bee run
    ```
+
+### Docker
+
+1. Build the Docker image
+   ```bash
+   sudo docker image build -t alibabaoss-alpine:2.0 -f ./alpine.Dockerfile .
+   ```
+
+2. Run the Docker container
+   ```bash
+      sudo docker run --rm -p 39022:8080 --name alibabaoss-container alibabaoss-alpine:2.0
+   ```   
+
+3. Access the API
+   ```bash
+      http://localhost:39022/
+   ```   
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
