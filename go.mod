@@ -6,7 +6,10 @@ toolchain go1.23.3
 
 require github.com/beego/beego/v2 v2.1.0
 
-require github.com/aliyun/aliyun-oss-go-sdk v3.0.2+incompatible
+require (
+	github.com/aliyun/aliyun-oss-go-sdk v3.0.2+incompatible
+	github.com/go-sql-driver/mysql v1.7.0
+)
 
 require (
 	github.com/beorn7/perks v1.0.1 // indirect

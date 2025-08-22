@@ -1,8 +1,10 @@
-# AlibabaOSS Project
+# Beego + mySql + Alibaba OSS
 
 ## Project Overview
 
-This is a Go project based on the Beego framework, designed to interact with Alibaba Cloud Object Storage Service (OSS). The project provides an API interface that allows users to post, get and delete a string stored in Alibaba Cloud OSS.
+This is a Go project based on the Beego framework, designed to interact with 
+- Alibaba Cloud Object Storage Service (OSS) - The project provides an API interface that allows users to post, get and delete a string stored in Alibaba Cloud OSS.
+- mySql database - demonstrates the basic Get and Post from mySql. Beego ORM automatically update the schema to the mysql database. 
 
 ## Technology Stack
 
@@ -35,6 +37,9 @@ This is a Go project based on the Beego framework, designed to interact with Ali
    Set up your Alibaba Cloud OSS access credentials in `conf/app.conf`
 
 4. Build and run
+
+   Before starting the application, you need to configure the alibaba access key and mysql connection string in `conf/app.conf`
+
    ```bash
    bee run
    ```
