@@ -1,10 +1,9 @@
-# Beego + mySql + Alibaba OSS
-
-## Project Overview
+# Beego + OpenAI + mySql + Alibaba OSS
 
 This is a Go project based on the Beego framework, designed to interact with 
-- Alibaba Cloud Object Storage Service (OSS) - provides the API interface that allows users to post, get and delete a string stored in Alibaba Cloud OSS.
-- mySql database - adds Beego ORM automatically update the schema to the mySql database and demonstrates the basic Get and Post. 
+- **OpenAPI** - extract keywords from a API Post request
+- **Alibaba Cloud Object Storage Service (OSS)** - provides the API interface that allows users to post, get and delete a string stored in Alibaba Cloud OSS.
+- **mySql database** - adds Beego ORM automatically update the schema to the mySql database and demonstrates the basic Get and Post. 
 
 ## Technology Stack
 
@@ -12,13 +11,16 @@ This is a Go project based on the Beego framework, designed to interact with
 - [Beego v2](https://github.com/beego/beego) - Web framework
 - [Bee](https://github.com/beego/bee) - Command-line tool for Beego
 - [Alibaba Cloud OSS SDK](https://github.com/aliyun/aliyun-oss-go-sdk) - Alibaba Cloud Object Storage Service SDK
+- [OpenAI GO Library](github.com/openai/openai-go/v2)
 
 ## Installation and Usage
 
 ### Prerequisites
 
-- Go 1.16 or higher
+- Go 1.23
 - Alibaba Cloud OSS account and access credentials
+- MySql connection string
+- Open API Key
 
 ### Installation Steps
 
@@ -36,6 +38,7 @@ This is a Go project based on the Beego framework, designed to interact with
 3. Configure credentials in `conf/app.conf`
    - Set up your Alibaba Cloud OSS access credentials
    - Configure MySQL connection string
+   - Configure OpenAI API key
 
 4. Build and run
 
